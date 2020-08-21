@@ -1,0 +1,106 @@
+{
+  "contracts": {
+    "Deployer": {
+      "address": "0xc63571C32Fdb0Dbf973758d107938BC4Dd6672f5",
+      "constructorCode": "608060405234801561001057600080fd5b50610aeb806100206000396000f3fe",
+      "bodyBytecodeHash": "23e50e52fff511b710da7636d0c9cc7d7f9acb5e06391c479dd726c4f8603a60",
+      "localBytecodeHash": "fbdb55a5d7288f0dc5216bd1fb192cadd81c4b1d0b5c59402640f5b825fa17ec",
+      "deployedBytecodeHash": "fbdb55a5d7288f0dc5216bd1fb192cadd81c4b1d0b5c59402640f5b825fa17ec",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 5,
+          "type": "t_bool",
+          "src": "757:24:0"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 8,
+          "type": "t_bool",
+          "src": "876:25:0"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 73,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:0"
+        },
+        {
+          "contract": "Deployer",
+          "path": "contracts/Deployer.sol",
+          "label": "_deployed",
+          "astId": 108,
+          "type": "t_address",
+          "src": "150:25:2"
+        },
+        {
+          "contract": "Deployer",
+          "path": "contracts/Deployer.sol",
+          "label": "_name",
+          "astId": 110,
+          "type": "t_string",
+          "src": "181:19:2"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "deploying-contract/Deployer": [
+      {
+        "address": "0xa95A9993Cf977b582E27d4cCc41D74a41f19c69c",
+        "version": "1.0.0",
+        "implementation": "0xc63571C32Fdb0Dbf973758d107938BC4Dd6672f5",
+        "admin": "0x417BCe8FA9Cd0219d41D4183AB97c9c508c304E9",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x417BCe8FA9Cd0219d41D4183AB97c9c508c304E9"
+  }
+}
